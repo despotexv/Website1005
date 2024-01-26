@@ -1,0 +1,506 @@
+/* Styles for the HTML element */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/* Styles for the body element */
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Remove default focus outline for links, buttons, selects, and inputs */
+a,
+button,
+select,
+input {
+    outline: 0 !important;
+}
+
+/* Styles for anchor (link) elements */
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+/* Hover state for anchor elements */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for elements with class "address" */
+.address {
+    font-style: italic;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 0.8em;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #14597f;
+    border: 1px solid #0b2d3d;
+    border-radius: 4px;
+    transition: all ease-out 0.2s;
+  }
+  .btn:hover {
+    text-decoration: none;
+    background-color: #1fb5e9;
+  }
+  .btn-group {
+    display: flex;
+    padding: 0;
+    margin-top: 10px;
+    list-style: none;
+    border: 1px solid #999;
+    border-radius: 4px;
+    flex-wrap: wrap;
+  }
+  .btn-group.vertical > button {
+    flex-basis: 100%;
+  }
+  .btn-group.vertical > button:not(:last-of-type) {
+    border-right: none;
+    border-bottom: 1px solid #999;
+  }
+  .btn-group > button {
+    padding: 10px;
+    font-size: 0.9em;
+    color: #444;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    box-sizing: border-box;
+    transition: all ease-out 0.2s;
+    flex: 1;
+  }
+  .btn-group > button:hover {
+    background-color: #f3f3f3;
+  }
+  .btn-group > button:hover,
+  .btn-group > buttonactive,
+  .btn-group > button:visited {
+    color: #444;
+  }
+  .btn-group > button:not(:last-of-type) {
+    border-right: 1px solid #999;
+  }
+  .btn-group > button.selected {
+    background-color: #ddf2fb;
+  }
+
+/* Styles for form controls with class "form-control" */
+.form-control {
+    padding: 9px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Styles for elements with class "form-group" */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Styles for error messages within "form-group" */
+.form-group .error {
+    color: #d9534f;
+}
+
+/* Styles for labels within "form-group" */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+/* Styles for error labels within "form-group" */
+.form-group label.error {
+    margin-top: 10px;
+}
+
+/* Styles for form controls within "form-group" */
+.form-group .form-control {
+    width: 100%;
+}
+
+/* Styles for elements with class "pull-right" */
+.pull-right {
+    float: right;
+}
+
+/* Styles for elements with class "row" */
+.row {
+    display: flex;
+    margin: 0 -10px;
+    clear: both;
+    flex-wrap: wrap;
+}
+
+/* Styles for columns within "row" */
+.row > .col {
+    padding: 0 10px;
+    flex: 1;
+}
+
+/* Styles for tables with class "table" */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Styles for table headers and bodies */
+.table thead,
+.table tbody {
+    border-bottom: 1px solid black;
+}
+
+/* Styles for table header cells */
+.table thead th {
+    font-weight: bold;
+}
+
+/* Styles for table body cells (not headers) */
+.table tbody th {
+    font-weight: normal;
+}
+
+/* Styles for table rows */
+.table tr {
+    text-align: left;
+}
+
+/* Styles for table cells (both headers and body) */
+.table tr > th,
+.table tr > td {
+    padding: 10px;
+}
+
+/* Styles for the element with ID "home-img" */
+#home-img {
+    float: right;
+    max-width: 40%;
+}
+
+/* Styles for the element with ID "product-image" */
+#product-image {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Styles for the element with ID "product-quantity" */
+#product-quantity {
+    max-width: 60px;
+}
+
+/* Styles for the header element */
+header {
+    height: 60px;
+    background-color: #14597f;
+    border-bottom: 1px solid #0b2d3d;
+}
+
+/* Styles for elements within the header container */
+header > .header-container {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+/* Styles for the logo within the header */
+header .logo {
+    display: inline-block;
+    height: 40px;
+    margin: 10px 0;
+}
+
+/* Styles for images within the logo */
+header .logo img {
+    height: 100%;
+}
+
+/* Styles for navigation within the header */
+header nav {
+    display: inline-block;
+    float: right;
+}
+
+/* Styles for navigation lists within the header */
+header nav > ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0 10px 0 0;
+    list-style: none;
+}
+
+/* Styles for list items within navigation lists */
+header nav > ul > li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/* Styles for links within list items in navigation lists */
+header nav > ul > li > a {
+    line-height: 60px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styles for active links within navigation lists */
+header nav > ul > li.active > a {
+    padding: 10px 15px;
+    background-color: #1fb5e9;
+    border-radius: 4px;
+}
+
+/* Styles for the shopping cart icon within the header */
+header nav .shopping-cart {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+/* Styles for the shopping cart icon's shopping cart icon */
+header nav .shopping-cart .fa-shopping-cart {
+    color: #14597f;
+}
+
+/* Styles for the count of items in the shopping cart icon */
+header nav .shopping-cart .count {
+    position: absolute;
+    right: -8px;
+    bottom: -14px;
+    width: 18px;
+    height: 18px;
+    font-size: 0.7em;
+    line-height: 18px;
+    color: white;
+    text-align: center;
+    background-color: #d9534f;
+    border-radius: 16px;
+}
+
+/* Styles for the count of items in the shopping cart icon when visible */
+header nav .shopping-cart .count.visible {
+    display: inline;
+}
+
+/* Styles for the main content area */
+main {
+    display:flex;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto 100px auto;
+    flex-wrap: wrap;
+}
+
+/* Styles for the sidebar */
+.sidebar {
+    padding-right: 30px;
+    box-sizing: border-box;
+    flex-basis: 25%;
+}
+
+/* Styles for h2 elements within the sidebar */
+.sidebar h2 {
+    margin-top: 30px;
+    font-size: 1em;
+}
+
+/* Styles for article elements */
+article {
+    position: relative;
+    flex: 1;
+}
+
+/* Styles for h1 elements within articles */
+article h1 {
+    margin-top: 30px;
+    font-size: 1.8em;
+}
+
+/* Styles for h2 elements within articles */
+article h2 {
+    margin-top: 0.8em;
+    font-size: 1.2em;
+}
+
+/* Styles for paragraphs within articles */
+article p {
+    text-align: justify;
+}
+
+/* Styles for horizontal rules within articles */
+article hr {
+    margin: 20px 0;
+    border: none;
+    border-bottom: 1px dashed #999;
+}
+
+/* Styles for elements with class "right-header" within articles */
+article .right-header {
+    float: right;
+    margin-top: 30px;
+}
+
+/* Styles for elements with class "products" */
+/* Products list */
+
+
+
+.products {
+    display: flex;
+    margin: -10px;
+    clear: both;
+    flex-wrap: wrap;
+}
+
+/* Styles for individual product elements */
+.products > .product {
+    padding: 10px;
+    height: auto; /* Assurez-vous que la hauteur n'est pas fixée à une valeur qui dépasse la fenêtre de visualisation */
+    box-sizing: border-box;
+    flex-basis: 33.3333%;
+}
+
+/* Styles for links within product elements */
+.products > .product > a {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #999;
+    border-radius: 4px;
+    transition: all ease-out 0.2s;
+}
+
+/* Hover and active states for links within product elements */
+.products > .product > a:hover,
+.products > .product > a:active,
+.products > .product > a:visited {
+    color: #000;
+    background-color: #f3f3f3;
+}
+
+/* Styles for h2 elements within product links */
+.products > .product > a h2 {
+    margin: 0 0 5px 0;
+    font-size: 1.1em;
+}
+
+/* Styles for price elements within product links */
+.products > .product > a .price {
+    margin: 0;
+    font-size: 1.1em;
+    text-align: right;
+}
+
+/* Styles for images within product links */
+.products > .product > a img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Styles for the container with class "contact-info" */
+/* Contact info container */
+.contact-info {
+    padding: 20px 0;
+    margin: 40px 0 0 0;
+    text-align: center;
+    border: 1px solid #999;
+    border-radius: 8px;
+}
+
+/* Styles for icons within the contact info container */
+.contact-info i {
+    margin-bottom: 10px;
+}
+
+/* Styles for the shopping cart table with class "shopping-cart-table" */
+.shopping-cart-table {
+    margin-bottom: 15px;
+}
+
+/* Styles for table headers and cells within the shopping cart table */
+.shopping-cart-table th,
+.shopping-cart-table td {
+    text-align: left;
+}
+
+/* Styles for the first column of table headers and cells */
+.shopping-cart-table th:first-child,
+.shopping-cart-table td:first-child {
+    width: 30px;
+}
+
+/* Styles for the last column of table headers and cells */
+.shopping-cart-table th:last-child,
+.shopping-cart-table td:last-child {
+    text-align: right;
+}
+
+/* Styles for rows within table headers and cells */
+.shopping-cart-table th .row,
+.shopping-cart-table td .row {
+    max-width: 100px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Styles for columns within rows of table headers and cells */
+.shopping-cart-table th .row .col,
+.shopping-cart-table td .row .col {
+    padding: 0;
+}
+
+/* Styles for buttons within the shopping cart table */
+.shopping-cart-table button {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    cursor: pointer;
+    background-color: #ddd;
+    border: none;
+    border-radius: 12px;
+}
+
+/* Hover state for buttons within the shopping cart table */
+.shopping-cart-table button:hover {
+    background-color: #bbb;
+}
+
+/* Disabled state for buttons within the shopping cart table */
+.shopping-cart-table button[disabled] {
+    cursor: default;
+    background-color: #ddd;
+}
+
+/* Styles for the shopping cart total at the bottom of the table */
+.shopping-cart-total {
+    padding-right: 10px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+.shopping-cart .count {
+    display: none;
+}
+
+
+/* Styles for the footer element */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #eee;
+    border-top: 1px solid #ccc;
+}

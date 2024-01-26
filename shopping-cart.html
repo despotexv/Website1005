@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Panier</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./assets/scripts/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="./index.html">
+          <img alt="logo" src="./assets/img/logo.svg" title="Accueil">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="./products.html">Produits</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li>
+            <a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-shopping-cart fa-stack-1x"></i>
+              </span>
+              <span class="count">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <article class="shopping-cart-article">
+      <h1>Panier</h1>
+      <div id="shopping-cart-items">
+        <table class="table shopping-cart-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Produit</th>
+              <th>Prix unitaire</th>
+              <th>Quantité</th>
+              <th>Prix</th>
+            </tr>
+          </thead>
+          <tbody>
+             <!-- Le contenu du tableau a été commenté pour être rempli dynamiquement avec JavaScript-->
+            <!-- 
+              <td><button title="Supprimer"><i class="fa fa-times"></i></button></td>
+              <td><a href="product.html">Console PS3</a></td>
+              <td>349,99$</td>
+              <td>
+                <div class="row">
+                  <div class="col">
+                    <button title="Retirer" disabled=""><i class="fa fa-minus"></i></button>
+                  </div>
+                  <div class="col">1</div>
+                  <div class="col">
+                    <button title="Ajouter"><i class="fa fa-plus"></i></button>
+                  </div>
+                </div>
+              </td>
+              <td>349,99$</td>
+            </tr>
+            <tr>
+              <td><button title="Supprimer"><i class="fa fa-times"></i></button></td>
+              <td><a href="product.html">iMac 27"</a></td>
+              <td>2 229,99$</td>
+              <td>
+                <div class="row">
+                  <div class="col">
+                    <button title="Retirer" disabled=""><i class="fa fa-minus"></i></button>
+                  </div>
+                  <div class="col">1</div>
+                  <div class="col">
+                    <button title="Ajouter"><i class="fa fa-plus"></i></button>
+                  </div>
+                </div>
+              </td>
+              <td>2 229,99$</td>
+            </tr>
+
+            <tr>
+              <td><button title="Supprimer"><i class="fa fa-times"></i></button></td>
+              <td><a href="product.html">Nikon D7000</a></td>
+              <td>549,99$</td>
+              <td>
+                <div class="row">
+                  <div class="col">
+                    <button title="Retirer" disabled=""><i class="fa fa-minus"></i></button>
+                  </div>
+                  <div class="col">1</div>
+                  <div class="col">
+                    <button title="Ajouter"><i class="fa fa-plus"></i></button>
+                  </div>
+                </div>
+              </td>
+              <td>549.99$</td>
+            </tr> -->
+          </tbody>
+        </table>
+        <p class="shopping-cart-total">Total: <strong>3 199,97$</strong></p>
+        <a class="btn pull-right" href="./order.html">Commander <i class="fa fa-angle-double-right"></i></a>
+        <button class="btn" onclick="emptyCart(event);"><i class="fa fa-trash-o"></i>Vider le panier</button>
+      </div>
+    </article>
+  </main>
+  <footer>
+    <p>Harti Anas - 20223579
+    Sow Ibrahima - 20233168
+    Kamdem Cedric - 20228302
+    </p>
+   
+</footer>
+</body>
+</html>
